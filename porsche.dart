@@ -1,7 +1,6 @@
-import 'dart:convert';
+// ignore_for_file: camel_case_types
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -24,18 +23,28 @@ class porsche extends StatelessWidget {
         ),
         body: ListView(
           children: const [
-            Image(
-              image: AssetImage(
-                "assets/porsche.jpg",
+            Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Image(
+                image: AssetImage(
+                  "assets/porsche.jpg",
+                ),
+                width: 900,
+                height: 250,
               ),
-              width: 900,
-              height: 500,
             ),
-            Text("1975 Porsche 911 Carrera",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 40,
-                )),
+            Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Column(
+                children: [
+                  Text("1975 Porsche 911 Carrera",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 60,
+                      )),
+                ],
+              ),
+            ),
             Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
