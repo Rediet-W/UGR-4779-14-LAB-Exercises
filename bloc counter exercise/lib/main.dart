@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lab/counter/bloc%20counter%20exercise/controller/bloc_fn.dart';
+import 'package:lab/controller/bloc_fn.dart';
 
 void main() {
   runApp(const MyApp());
